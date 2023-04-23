@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+    <script>
+        function set_color(){
+            document.getElementById('h1color').style.background = "yellow";
+        }
+
+        function remove_color(){
+            document.getElementById('h1color').style.background = "white";
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="h1color" onmouseover="set_color();" onmouseout="remove_color();">Welcome to the JS Code</h1>
+    <button onclick="document.getElementById('result').innerHTML = Date();">Click here to see result</button>
+    <label id="result"></label>
+</body>
+</html>
